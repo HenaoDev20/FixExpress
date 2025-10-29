@@ -1,0 +1,282 @@
+
+/* ---------------------------
+   1. RESETEO BÁSICO
+   Limpia márgenes, paddings y define una fuente moderna
+--------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------
+   2. ESTILO GENERAL DE LA PÁGINA
+   Fondo claro con tono suave y centro del contenido
+--------------------------- */
+body {
+  background-color: #f5f6fa; /* Fondo gris muy claro */
+  color: #333; /* Texto gris oscuro para buena legibilidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ---------------------------
+   3. CONTENEDOR PRINCIPAL
+   Centra el formulario con sombra sutil y bordes redondeados
+--------------------------- */
+.registro-container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff; /* Fondo blanco puro para contraste limpio */
+  padding: 2.5rem;
+  border-radius: 20px; /* Bordes suaves y modernos */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto flotante */
+}
+
+/* ---------------------------
+   4. TÍTULO DEL FORMULARIO
+   Tipografía grande, limpia y centrada
+--------------------------- */
+.registro-formulario h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50; /* Azul grisáceo elegante */
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* ---------------------------
+   5. CAMPOS DE FORMULARIO
+   Organización vertical y espaciado cómodo
+--------------------------- */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+/* ---------------------------
+   6. ETIQUETAS (LABELS)
+   Texto pequeño, elegante y con separación del campo
+--------------------------- */
+.campo label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+/* ---------------------------
+   7. CAMPOS DE ENTRADA (INPUTS)
+   Bordes suaves, fondo blanco, efecto al enfocar
+--------------------------- */
+.campo input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al enfocar el input (focus) */
+.campo input:focus {
+  border-color: #4ea1ff; /* Azul moderno */
+  box-shadow: 0 0 5px rgba(78, 161, 255, 0.3);
+  outline: none;
+}
+
+/* ---------------------------
+   8. BOTÓN DE REGISTRO
+   Diseño claro con transición suave y efecto hover
+--------------------------- */
+.btn-registrar {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #4ea1ff; /* Azul suave */
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.btn-registrar:hover {
+  background-color: #3b8de0; /* Azul más profundo */
+  transform: translateY(-2px);
+}
+
+/* ---------------------------
+   9. ENLACE DE LOGIN
+   Texto sutil y elegante al final
+--------------------------- */
+.login-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+  color: #555;
+}
+
+.login-link a {
+  color: #4ea1ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.login-link a:hover {
+  color: #3b8de0;
+}
+
+
+
+/* =====================================================
+   LOGIN.CSS — ESTILO FUTURISTA Y MINIMALISTA PARA LOGIN
+   
+
+/* -----------------------------------------------------
+   1. RESETEO BÁSICO
+   Limpieza de márgenes, paddings y fuente moderna
+----------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------------------------------------
+   2. ESTILO GENERAL DEL BODY
+   Fondo claro y contenido centrado
+----------------------------------------------------- */
+body {
+  background-color: #f5f6fa; /* Fondo gris claro */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* -----------------------------------------------------
+   3. CONTENEDOR PRINCIPAL DEL LOGIN
+   Caja con sombra y bordes suaves
+----------------------------------------------------- */
+.login-container {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------------------------------------
+   4. TÍTULO DEL FORMULARIO
+   Centrado y con color elegante
+----------------------------------------------------- */
+.login-formulario h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* -----------------------------------------------------
+   5. CAMPOS DE FORMULARIO
+   Alineación vertical y espaciado entre campos
+----------------------------------------------------- */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+/* Etiquetas descriptivas */
+.campo label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+/* Campos de entrada */
+.campo input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al enfocar */
+.campo input:focus {
+  border-color: #4ea1ff;
+  box-shadow: 0 0 5px rgba(78, 161, 255, 0.3);
+  outline: none;
+}
+
+/* -----------------------------------------------------
+   6. BOTÓN DE LOGIN
+   Estilo moderno con transición suave
+----------------------------------------------------- */
+.btn-login {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #4ea1ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover del botón */
+.btn-login:hover {
+  background-color: #3b8de0;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------------------------
+   7. ENLACE HACIA REGISTRO
+   Texto sutil al final del formulario
+----------------------------------------------------- */
+.registro-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+  color: #555;
+}
+
+.registro-link a {
+  color: #4ea1ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.registro-link a:hover {
+  color: #3b8de0;
+}
+
+/* -----------------------------------------------------
+   8. RESPONSIVIDAD
+   Ajustes para pantallas pequeñas
+----------------------------------------------------- */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .login-formulario h1 {
+    font-size: 1.6rem;
+  }
+}
