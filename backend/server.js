@@ -94,17 +94,17 @@ app.post("/login", (req, res) => {
     // Registrar inicio en tabla login
     db.query("INSERT INTO login (usuario_id) VALUES (?)", [user.id]);
 
-    res.redirect("/dashboard");
+    res.redirect("/inicio");
   });
 });
 
 
 //  RUTA PROTEGIDA PARA DASHBOARD
-app.get("/dashboard", (req, res) => {
+app.get("/inicio", (req, res) => {
   if (!req.session.user) {
     return res.redirect("/login.html");
   }
-  res.sendFile(path.join(__dirname, "public", "dashboard.html"));
+  res.sendFile(path.join(__dirname, "public", "inicio.html"));
 });
 
 

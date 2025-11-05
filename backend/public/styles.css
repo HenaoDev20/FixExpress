@@ -286,45 +286,122 @@ body {
    
 ----------------------------------------------------- */
 /* Estilo general */
+/* Futuristic minimalist design */
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-/* Caja del dashboard */
-.dashboard-container {
-    background: #fff;
-    width: 400px;
-    padding: 30px;
+.inicio-container {
     text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    background: rgba(20, 20, 20, 0.9);
+    padding: 40px;
+    border-radius: 18px;
+    width: 350px;
+    box-shadow: 0 0 25px rgba(0,255,170,0.25);
+    border: 1px solid rgba(0,255,170,0.3);
 }
 
-/* Título */
 h2 {
-    margin-bottom: 20px;
-    color: #222;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #00ffae;
 }
 
-/* Botón cerrar sesión */
-.btn-logout {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 12px 20px;
-    background: #1e90ff;
-    color: #fff;
+p {
+    margin-bottom: 25px;
+}
+
+/* Estilo minimalista rojo, blanco y azul claro */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #F7F7F7;
+    color: #1D1D1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.inicio-container {
+    text-align: center;
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 14px;
+    width: 350px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    border: 1px solid #E5E5E5;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #E63946; /* Rojo principal */
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Botones */
+.botones-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.action-btn {
+    padding: 12px;
+    border-radius: 10px;
+    background: #E63946; /* Rojo */
+    color: #FFFFFF;
+    font-weight: 500;
     text-decoration: none;
+    display: block;
+    transition: .25s;
+}
+
+.action-btn:hover {
+    background: #CC2E3A;
+}
+
+/* Botón secundario */
+.action-btn.secondary {
+    background: #A8DADC; /* Azul claro */
+    color: #1D1D1D;
+}
+
+.action-btn.secondary:hover {
+    background: #8EC9D1;
+}
+
+/* Cerrar sesión */
+.btn-logout {
+    display: inline-block;
+    padding: 10px;
     border-radius: 8px;
-    transition: 0.3s;
+    background: transparent;
+    color: #E63946;
+    border: 1px solid #E63946;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .25s;
 }
 
 .btn-logout:hover {
-    background: #156ed4;
+    background: #E63946;
+    color: #FFFFFF;
 }
