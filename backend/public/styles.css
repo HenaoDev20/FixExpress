@@ -280,3 +280,51 @@ body {
     font-size: 1.6rem;
   }
 }
+
+/* -----------------------------------------------------
+   8. estilo dashboard
+   
+----------------------------------------------------- */
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caja del dashboard */
+.dashboard-container {
+    background: #fff;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Botón cerrar sesión */
+.btn-logout {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: #156ed4;
+}
