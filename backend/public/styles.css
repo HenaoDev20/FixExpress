@@ -48,6 +48,16 @@ body {
   letter-spacing: 0.5px;
 }
 
+.registro-formulario h3{
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50; /* Azul grisáceo elegante */
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+
+
 /* ---------------------------
    5. CAMPOS DE FORMULARIO
    Organización vertical y espaciado cómodo
@@ -187,6 +197,14 @@ body {
   letter-spacing: 0.5px;
 }
 
+.login-formulario h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
 /* -----------------------------------------------------
    5. CAMPOS DE FORMULARIO
    Alineación vertical y espaciado entre campos
@@ -281,127 +299,128 @@ body {
   }
 }
 
-/* -----------------------------------------------------
-   8. estilo dashboard
-   
------------------------------------------------------ */
-/* Estilo general */
-/* Futuristic minimalist design */
+/* ===Inicio
+   Limpia márgenes, paddings y define una fuente moderna
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
+/* =========================================================
+   2. ESTILO GENERAL DE LA PÁGINA
+   Fondo claro, centrado vertical y horizontal
+========================================================= */
+/* =========================================================
+   Fondo con imagen y efecto minimalista
+========================================================= */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0d0d0d;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('img/iniciofondo.jpg') no-repeat center center fixed;
+  background-size: cover; /* Hace que la imagen ocupe toda la pantalla */
+  color: #1D1D1D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
+/* =========================================================
+   3. CONTENEDOR PRINCIPAL (Dashboard)
+   Caja central con sombras y bordes suaves
+========================================================= */
 .inicio-container {
-    text-align: center;
-    background: rgba(20, 20, 20, 0.9);
-    padding: 40px;
-    border-radius: 18px;
-    width: 350px;
-    box-shadow: 0 0 25px rgba(0,255,170,0.25);
-    border: 1px solid rgba(0,255,170,0.3);
+  text-align: center;
+  background: #ffffff; /* Fondo blanco limpio */
+  padding: 2.5rem;
+  border-radius: 18px;
+  width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e5e5;
 }
 
+/* =========================================================
+   4. TÍTULO PRINCIPAL
+   Colores corporativos y estilo minimalista
+========================================================= */
 h2 {
-    margin-bottom: 10px;
-    font-size: 26px;
-    color: #00ffae;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #3b8de0; /* Rojo principal */
+  margin-bottom: 0.8rem;
 }
 
+/* Subtítulo o texto complementario */
 p {
-    margin-bottom: 25px;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.8rem;
 }
 
-/* Estilo minimalista rojo, blanco y azul claro */
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: #F7F7F7;
-    color: #1D1D1D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.inicio-container {
-    text-align: center;
-    background: #FFFFFF;
-    padding: 40px;
-    border-radius: 14px;
-    width: 350px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-    border: 1px solid #E5E5E5;
-}
-
-h2 {
-    margin-bottom: 5px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #E63946; /* Rojo principal */
-}
-
-p {
-    margin-bottom: 25px;
-    font-size: 14px;
-    color: #444;
-}
-
-/* Botones */
+/* =========================================================
+   5. BOTONES DE ACCIÓN (Soy obrero / Necesito un obrero)
+   Minimalistas, suaves y con contraste de color
+========================================================= */
 .botones-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 25px;
 }
 
+/* Botón principal (rojo) */
 .action-btn {
-    padding: 12px;
-    border-radius: 10px;
-    background: #E63946; /* Rojo */
-    color: #FFFFFF;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    transition: .25s;
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
+  background: #3b8de0;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
 }
 
+/* Efecto hover del botón rojo */
 .action-btn:hover {
-    background: #CC2E3A;
+  background: #3b8de0;
+  transform: translateY(-2px);
 }
 
-/* Botón secundario */
+/* Botón secundario (azul claro) */
 .action-btn.secondary {
-    background: #A8DADC; /* Azul claro */
-    color: #1D1D1D;
+  background: #A8DADC;
+  color: #1D1D1D;
 }
 
+/* Hover botón azul claro */
 .action-btn.secondary:hover {
-    background: #8EC9D1;
+  background: #8EC9D1;
+  transform: translateY(-2px);
 }
 
-/* Cerrar sesión */
+/* =========================================================
+   6. BOTÓN DE CERRAR SESIÓN
+   Versión outline minimalista y elegante
+========================================================= */
 .btn-logout {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 8px;
-    background: transparent;
-    color: #E63946;
-    border: 1px solid #E63946;
-    text-decoration: none;
-    font-size: 13px;
-    transition: .25s;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: transparent;
+  color: #3b8de0;
+  border: 1px solid #3b8de0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
 }
 
+/* Hover del botón de cerrar sesión */
 .btn-logout:hover {
-    background: #E63946;
-    color: #FFFFFF;
+  background: #3b8de0;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
