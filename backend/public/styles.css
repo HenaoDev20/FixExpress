@@ -424,3 +424,137 @@ p {
   color: #ffffff;
   transform: translateY(-2px);
 }
+
+/* ============================================================
+   FORMULARIO TÉCNICO — FIXEXPRESS
+   Estilo minimalista con colores blanco, azul claro y rojo
+   ============================================================ */
+
+/* -----------------------------
+   1. RESETEO BÁSICO
+   Limpieza de márgenes, paddings y fuente moderna
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------------
+   2. ESTILO GENERAL DEL BODY
+   Fondo claro y centrado en pantalla
+----------------------------- */
+body {
+  background-color: #f7f8fc; /* Fondo gris muy claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* -----------------------------
+   3. CONTENEDOR PRINCIPAL
+   Caja blanca con sombra sutil y bordes suaves
+----------------------------- */
+.tecnico-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+
+/* -----------------------------
+   4. TÍTULO Y DESCRIPCIÓN
+----------------------------- */
+.tecnico-container h1 {
+  color: #3b8de0; /* Rojo principal */
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.tecnico-container p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+}
+
+/* -----------------------------
+   5. CAMPOS DEL FORMULARIO
+   Organización vertical y espaciado cómodo
+----------------------------- */
+.campo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1.3rem;
+}
+
+/* Etiquetas */
+.campo label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+/* Entradas y área de texto */
+.campo input,
+.campo textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al enfocar (focus) */
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #4ea1ff; /* Azul claro */
+  box-shadow: 0 0 6px rgba(78, 161, 255, 0.25);
+  outline: none;
+}
+
+/* -----------------------------
+   6. BOTÓN DE REGISTRO
+   Minimalista con color azul claro y hover suave
+----------------------------- */
+.btn-registrar {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #A8DADC; /* Azul claro */
+  color: #1D1D1D;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-registrar:hover {
+  background-color: #8EC9D1; /* Azul más intenso */
+  transform: translateY(-2px);
+}
+
+/* -----------------------------
+   7. ENLACE DE VOLVER
+----------------------------- */
+.volver-inicio {
+  margin-top: 1.5rem;
+}
+
+.volver-inicio a {
+  text-decoration: none;
+  color: #3b8de0;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.volver-inicio a:hover {
+  color: #3b8de0;
+}

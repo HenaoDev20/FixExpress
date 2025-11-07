@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Técnico - FixExpress</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =============================================
+       CONTENEDOR PRINCIPAL DEL FORMULARIO TÉCNICO
+       ============================================= -->
+  <div class="tecnico-container">
+    
+    <h1>Perfil  de Técnico</h1>
+    <p>Completa la siguiente información para completar el perfil de técnico en FixExpress.</p>
+
+    <!-- =============================================
+         FORMULARIO DE REGISTRO
+         ============================================= -->
+        <form action="/tecnico" method="POST" class="tecnico-formulario">
+
+
+      <!-- Campo: Nombre completo -->
+      <div class="campo">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Nombre" required>
+      </div>
+
+      <!-- Campo: WhatsApp -->
+      <div class="campo">
+        <label for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ej: +57 300 123 4567" required>
+      </div>
+
+      <!-- Campo: Nombre de la residencia -->
+      <div class="campo">
+        <label for="residencia">Nombre de la Residencia</label>
+        <input type="text" id="residencia" name="residencia" placeholder="Ej: Conjunto Los Robles" required>
+      </div>
+
+      <!-- Campo: Conocimientos laborales -->
+      <div class="campo">
+        <label for="conocimientos">Conocimientos Laborales</label>
+        <textarea id="conocimientos" name="conocimientos" rows="4" placeholder="Ej: Electricidad, plomería, pintura..." required></textarea>
+      </div>
+
+      <!-- Botón de enviar -->
+      <button type="submit" class="btn-registrar">Registrar Técnico</button>
+    </form>
+
+    <!-- Enlace de volver al inicio -->
+    <div class="volver-inicio">
+      <a href="inicio.html">← Volver al Inicio</a>
+    </div>
+  </div>
+
+</body>
+</html>
