@@ -15,7 +15,7 @@
    Fondo claro con tono suave y centro del contenido
 --------------------------- */
 body {
-  background-color: #f5f6fa; /* Fondo gris muy claro */
+  background-image: url("img/iniciofondo.jpg");
   color: #333; /* Texto gris oscuro para buena legibilidad */
   display: flex;
   justify-content: center;
@@ -164,7 +164,7 @@ body {
    Fondo claro y contenido centrado
 ----------------------------------------------------- */
 body {
-  background-color: #f5f6fa; /* Fondo gris claro */
+  background-image: url("img/iniciofondo.jpg");
   color: #333;
   display: flex;
   justify-content: center;
@@ -446,7 +446,7 @@ p {
    Fondo claro y centrado en pantalla
 ----------------------------- */
 body {
-  background-color: #f7f8fc; /* Fondo gris muy claro */
+  background-image: url("/img/iniciofondo.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -565,7 +565,7 @@ body {
    =========================================================== */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f8f9fa;
+  background-image: url("/img/iniciofondo.jpg");
   color: #1d3557;
   margin: 0;
   padding: 0;
