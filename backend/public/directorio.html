@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio de Técnicos - FixExpress</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="directorio-container">
+    <h1>Directorio de Técnicos</h1>
+    <div id="tarjetas-container" class="tarjetas-container">
+      <p>Cargando técnicos...</p>
+    </div>
+
+    <div class="volver-inicio">
+      <a href="/inicio.html">← Volver al Inicio</a>
+    </div>
+  </div>
+
+  <script>
+    // === SCRIPT INTERNO 
+    document.addEventListener("DOMContentLoaded", async () => {
+      const contenedor = document.getElementById("tarjetas-container");
+
+      try {
+        const res = await fetch("/api/tecnicos");
+        const tecnicos = await res.json();
+
+        if (tecnicos.length === 0) {
+          contenedor.innerHTML = "<p>No hay técnicos registrados aún.</p>";
+          return;
+        }
+
+        contenedor.innerHTML = "";
+
+        tecnicos.forEach(tec => {
+          const tarjeta = document.createElement("div");
+          tarjeta.classList.add("tarjeta-tecnico");
+
+          tarjeta.innerHTML = `
+            <h2>${tec.nombre}</h2>
+            <p><strong>WhatsApp:</strong> ${tec.whatsapp}</p>
+            <p><strong>Residencia:</strong> ${tec.residencia}</p>
+            <p><strong>Conocimientos:</strong> ${tec.conocimientos}</p>
+            <a href="https://wa.me/${tec.whatsapp.replace(/\D/g, '')}" target="_blank" class="btn-contactar">Contactar</a>
+          `;
+
+          contenedor.appendChild(tarjeta);
+        });
+      } catch (error) {
+        console.error("Error cargando el directorio:", error);
+        contenedor.innerHTML = "<p>Error al cargar el directorio de técnicos.</p>";
+      }
+    });
+  </script>
+</body>
+</html>

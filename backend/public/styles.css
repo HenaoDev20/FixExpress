@@ -558,3 +558,129 @@ body {
 .volver-inicio a:hover {
   color: #3b8de0;
 }
+
+
+/* ===========================================================
+   ESTILOS GENERALES DE LA PÁGINA
+   =========================================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #1d3557;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #1d3557;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.directorio-container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* ===========================================================
+   CONTENEDOR DE TARJETAS — SCROLL HORIZONTAL
+   =========================================================== */
+.tarjetas-container {
+  display: flex;
+  overflow-x: auto;           /* desplazamiento horizontal */
+  gap: 25px;                  /* espacio entre tarjetas */
+  padding: 20px;
+  scroll-behavior: smooth;    /* desplazamiento suave */
+  scrollbar-width: thin;      /* estilo del scroll (Firefox) */
+  scrollbar-color: #a8dadc transparent;
+}
+
+.tarjetas-container::-webkit-scrollbar {
+  height: 10px;               /* tamaño del scroll horizontal */
+}
+
+.tarjetas-container::-webkit-scrollbar-thumb {
+  background-color: #a8dadc;  /* color del scroll */
+  border-radius: 10px;
+}
+
+/* ===========================================================
+   TARJETA DE TÉCNICO
+   =========================================================== */
+.tarjeta-tecnico {
+  background: #ffffff;
+  border: 2px solid #a8dadc;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  width: 320px;               /* ancho fijo para mantener orden */
+  min-height: 260px;
+  flex-shrink: 0;             /* evita que se achiquen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.tarjeta-tecnico:hover {
+  transform: translateY(-5px);
+  border-color: #e63946;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================================================
+   BOTÓN "CONTACTAR" — ESTILO MODERNO Y RESPONSIVO
+   =========================================================== */
+.btn-contactar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #25D366, #128C7E); /* degradado tipo WhatsApp */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+.btn-contactar:hover {
+  background: linear-gradient(135deg, #1EBE5C, #0E6B54);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(37, 211, 102, 0.4);
+}
+
+.btn-contactar:active {
+  transform: scale(0.97);
+  background: linear-gradient(135deg, #128C7E, #075E54);
+}
+
+/* Icono de WhatsApp dentro del botón */
+.btn-contactar img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===========================================================
+   ENLACE PARA VOLVER AL INICIO
+   =========================================================== */
+.volver-inicio {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.volver-inicio a {
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.volver-inicio a:hover {
+  color: #e63946;
+}

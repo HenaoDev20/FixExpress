@@ -86,6 +86,22 @@ app.post('/tecnico', (req, res) => {
   });
 });
 
+
+// =============================================
+// API - OBTENER TODOS LOS TÉCNICOS (JSON)
+// =============================================
+app.get('/api/tecnicos', (req, res) => {
+  const sql = 'SELECT * FROM tecnicos';
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error('Error al obtener los técnicos:', err.sqlMessage || err);
+      return res.status(500).json({ error: 'Error al obtener los técnicos' });
+    }
+    res.json(results);
+  });
+});
+
+
 // =============================================
 // LOGIN
 // =============================================
